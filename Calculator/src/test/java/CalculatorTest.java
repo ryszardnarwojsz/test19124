@@ -67,6 +67,7 @@ public class CalculatorTest {
     //then
 
         Assertions.assertEquals(-0.9999999995343387,division);
+
     }
 
 

@@ -39,7 +39,7 @@ public class Calculator {
         System.out.println(Calculator.subtraction(324,563));
         System.out.println(Calculator.multiplication(324,563));
         System.out.println(Calculator.division(324,561));
-        System.out.println("calculation finish");
+        System.out.println("calculation finish2");
     }
 
 }
