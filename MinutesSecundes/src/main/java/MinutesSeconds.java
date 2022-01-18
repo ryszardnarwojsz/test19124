@@ -2,7 +2,7 @@ public class MinutesSeconds {
 
     public static void main(String[] args) {
 
-        System.out.println(MinutesSecondsConversion.conversionMinutesIntoSeconds(25));
+        System.out.println(MinutesSecondsConversion.conversionMinutesIntoSeconds(20));
 
     }
 }

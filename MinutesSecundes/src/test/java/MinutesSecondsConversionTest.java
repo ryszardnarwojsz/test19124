@@ -8,10 +8,10 @@ class MinutesSecondsConversionTest {
     @Test
     void conversionMinutesIntoSeconds() {
         //given
-        int minutes = Integer.MAX_VALUE;
+            int minutes = Integer.MAX_VALUE;
         //when
-        double seconds = MinutesSecondsConversion.conversionMinutesIntoSeconds(minutes);
+            double seconds = MinutesSecondsConversion.conversionMinutesIntoSeconds(minutes);
         //then
-        Assertions.assertEquals(128849018820D, seconds);
+            Assertions.assertEquals(128849018820D, seconds);
     }
 }
