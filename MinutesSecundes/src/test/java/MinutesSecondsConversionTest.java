@@ -10,7 +10,7 @@ class MinutesSecondsConversionTest {
         //given
             int minutes = Integer.MAX_VALUE;
         //when
-            double seconds = MinutesSecondsConversion.conversionMinutesIntoSeconds(minutes);
+        long seconds = (long) MinutesSecondsConversion.conversionMinutesIntoSeconds(minutes);
         //then
             Assertions.assertEquals(128849018820D, seconds);
     }
