@@ -6,25 +6,37 @@ import static org.junit.jupiter.api.Assertions.*;
 class RectangularTriangleTest {
 
     @Test
-    void ifRectangularTriangle1() {
+    void isRectangularTriangle1() {
         //given
-        float a = (float) 4.1;
-        float b = (float) 2.3;
-        float c = (float) 4.701063709417263;
+        float a = 4.1F;
+        float b = 2.3F;
+        float c = 4.701063709417263F;
         //when
-        boolean isTriangle = RectangularTriangle.ifRectangularTriangle(a,b,c);
+        boolean isTriangle = RectangularTriangle.isRectangularTriangle(a,b,c);
+        //then
+        assertTrue(isTriangle);
+    }
+
+    @Test
+    void isRectangularTriangle2() {
+        //given
+        float a = 4.701063709417263F;
+        float b = 2.3F;
+        float c = 4.1F;
+        //when
+        boolean isTriangle = RectangularTriangle.isRectangularTriangle(a,b,c);
         //then
         Assertions.assertTrue(isTriangle);
     }
 
     @Test
-    void ifRectangularTriangle2() {
+    void isRectangularTriangle3() {
         //given
-        float a = (float) 4.1;
-        float b = (float) 2.3;
-        float c = (float) 4.7010;
+        float a = 4.1F;
+        float b = 2.3F;
+        float c = 4.7010F;
         //when
-        boolean isTriangle = RectangularTriangle.ifRectangularTriangle(a,b,c);
+        boolean isTriangle = RectangularTriangle.isRectangularTriangle(a,b,c);
         //then
         Assertions.assertFalse(isTriangle);
     }
