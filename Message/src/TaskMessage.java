@@ -6,6 +6,7 @@ public class TaskMessage {
         WindowMessage WindowMessage = new WindowMessage();
 
         System.out.println(ConsoleMessage.getMessage());
+
         System.out.println(WindowMessage.getMessage());
     }
 }
