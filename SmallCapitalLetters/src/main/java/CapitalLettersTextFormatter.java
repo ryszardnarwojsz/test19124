@@ -1,4 +1,4 @@
-public class CapitalLetters implements TextFormatter{
+public class CapitalLettersTextFormatter implements TextFormatter{
 
     @Override
     public String formatText(String text) {
