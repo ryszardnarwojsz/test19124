@@ -8,7 +8,7 @@ public abstract class BaseEmployee {
     protected String position;
     private int hiredDate;
     private int hiredPeriod;
-    protected int baseSalary = 3000;
+    protected int baseSalary;
 
 
     public BaseEmployee(String employeeName, String employeeSurname, String position, int hiredDate) {
@@ -16,7 +16,15 @@ public abstract class BaseEmployee {
         this.employeeSurname = employeeSurname;
         this.position = position;
         this.hiredDate = hiredDate;
-        this.baseSalary = baseSalary;
+        this.baseSalary = 3000;
+    }
+
+    public BaseEmployee(String employeeName, String employeeSurname, String position, int hiredDate, final int salary) {
+        this.employeeName = employeeName;
+        this.employeeSurname = employeeSurname;
+        this.position = position;
+        this.hiredDate = hiredDate;
+        this.baseSalary = salary;
     }
 
 

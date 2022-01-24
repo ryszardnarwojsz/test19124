@@ -1,11 +1,11 @@
 public class Manager extends BaseEmployee{
 
-    private static final int baseSalary = 5000;
+    private static final int managerBaseSalary = 5000;
     private static int bonus = 500;
     private static final String employeePosition = "Manager";
 
     public Manager(String employeeName, String employeeSurname, int hiredDate) {
-       super(employeeName, employeeSurname, employeePosition, hiredDate);
+       super(employeeName, employeeSurname, employeePosition, hiredDate,managerBaseSalary);
 
     }
 
