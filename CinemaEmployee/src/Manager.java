@@ -1,7 +1,8 @@
 public class Manager extends BaseEmployee{
 
     private static final int MANAGER_BASE_SALARY = 5000;
-    private static int BONUS = 500;
+    private static int DEFAULT_BONUS = 500;
+    private int bonus = DEFAULT_BONUS;
     private static final String EMPLOYEE_POSITION = "Manager";
 
     public Manager(String employeeName, String employeeSurname, int hiredDate) {
@@ -11,16 +12,16 @@ public class Manager extends BaseEmployee{
 
     @Override
     public int getBaseSalary(){
-        return MANAGER_BASE_SALARY;
+        return baseSalary;
      }
 
     @Override
     public int calculateMonthlySalary() {
-        return MANAGER_BASE_SALARY + BONUS;
+        return baseSalary + bonus;
     }
 
     public void setBonus(int bonus) {
-        Manager.BONUS = bonus;
+        this.bonus = bonus;
     }
 
 
