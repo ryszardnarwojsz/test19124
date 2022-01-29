@@ -2,7 +2,6 @@ public class MathOperations {
 
     protected int a;
     protected int b;
-    protected String operationName;
 
     public MathOperations(int a, int b) {
         this.a = a;
