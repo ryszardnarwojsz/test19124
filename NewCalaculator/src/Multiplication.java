@@ -1,7 +1,7 @@
-public class Multiplication extends MathOperations {
+public class Multiplication implements MathOperations {
 
     @Override
-    protected double calculateParameters(int a, int b) {
+    public double calculate(int a, int b) {
     return a * b;
 }
 

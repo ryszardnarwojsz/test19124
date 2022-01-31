@@ -1,8 +1,8 @@
-public class Subtraction extends MathOperations {
+public class Subtraction implements MathOperations {
 
     @Override
-    public double calculateParameters(int a, int b) {
-        return Math.subtractExact(a,b);
+    public double calculate(int a, int b) {
+        return a - b;
     }
 
     @Override

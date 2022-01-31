@@ -1,7 +1,7 @@
-public class Division extends MathOperations {
+public class Division implements MathOperations {
 
     @Override
-    protected double calculateParameters(int a, int b) {
+     public double calculate (int a, int b) {
         return (double) a / (double) b;
     }
 
@@ -9,5 +9,7 @@ public class Division extends MathOperations {
     public String toString() {
         return "Division ";
     }
+
+
 }
 

@@ -12,9 +12,8 @@ public class NewCalculator {
         int secondNumber = NewScan.getSecondNumber();
 
         MathOperations chosenOperation = MathematicsArray.getOperationObject(numberOfmathOperation);
-        MathOperations newMathematicsOperation = new MathOperations(firstNumber,secondNumber);
 
-        System.out.println("Result of " + chosenOperation.toString() + " = " + newMathematicsOperation.calculate(chosenOperation));
+        System.out.println("Result of " + chosenOperation.toString() + " = " + chosenOperation.calculate(firstNumber,secondNumber));
 
 
     }
