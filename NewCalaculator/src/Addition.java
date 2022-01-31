@@ -1,13 +1,13 @@
-public class Addition extends MathOperations {
-
-    @Override
-    public double calculateParameters(int a, int b) {
-        return Math.addExact(a, b);
-    }
+public class Addition implements MathOperations {
 
     @Override
     public String toString() {
         return "Addition ";
+    }
+
+    @Override
+    public double calculate(int a, int b) {
+        return a + b;
     }
 }
 
