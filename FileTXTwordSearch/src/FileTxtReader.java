@@ -21,6 +21,8 @@ public class FileTxtReader {
 
                 if(text.contains(word)){
                 isContainWord = text.contains(word);
+
+            break;
                 }
             }
             return isContainWord;
