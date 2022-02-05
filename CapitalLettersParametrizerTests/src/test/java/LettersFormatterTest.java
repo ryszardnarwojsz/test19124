@@ -7,15 +7,15 @@ import org.junit.jupiter.params.provider.ValueSource;
 class LettersFormatterTest {
 
     @ParameterizedTest
-    @ValueSource(strings = {"RYSIEK", "KRZYSIEK", "OLA", " "})
+    @ValueSource(strings = {"RYSIEK", "KRZySIEK", "OLA", " ","jadzia",})
     void changeToUpperCase(String input) {
-        Assertions.assertSame(LettersFormatter.changeToUpperCase(input), input);
+        Assertions.assertEquals(LettersFormatter.changeToUpperCase(input), input.toUpperCase());
     }
 
     @ParameterizedTest
     @NullSource
     void changeToUpperCaseForNull(String input) {
-        Assertions.assertSame("", LettersFormatter.changeToUpperCase(input));
+        Assertions.assertEquals("", LettersFormatter.changeToUpperCase(input));
     }
 
 }
