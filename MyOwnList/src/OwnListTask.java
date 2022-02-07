@@ -4,17 +4,18 @@ public class OwnListTask {
 
         MyList newList = new MyList();
 
+        newList.add(1);
+        newList.add(2);
         newList.add(3);
+        newList.add(4);
         newList.add(5);
-        newList.add(1);
-        newList.add(13);
-        newList.add(1);
+        newList.add(6);
+
         System.out.println(newList);
 
-        newList.remove(0);
+        newList.remove(4);
         System.out.println(newList);
-
-        newList.add(3,99);
+        newList.add(2,77);
         System.out.println(newList);
 
         System.out.println(newList.get(2));
