@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class MyList implements OwnList {
 
     private int i;
-    int[] myList = new int[1];
+    int[] myList = new int[0];
 
     @Override
     public int size() {
