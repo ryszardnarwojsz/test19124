@@ -2,8 +2,7 @@ public class ModuloThreeTask {
 
     public static void main(String[] args) {
 
-        ModuloThree newModuloThree = new ModuloThree();
-        System.out.println(newModuloThree.isDividedByThee(31));
-
+        int[] newTableToCheck = {34,3,30,95,99};
+        ModuloThree.validate(newTableToCheck);
     }
 }
