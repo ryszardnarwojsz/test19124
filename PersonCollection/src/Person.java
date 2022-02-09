@@ -1,10 +1,10 @@
 public class Person implements Comparable<Person> {
 
-    String name;
-    String surname;
-    int yearOfBirth;
-    int height;
-    int weight;
+    private String name;
+    private String surname;
+    private int yearOfBirth;
+    private int height;
+    private int weight;
 
 
     public Person(String name, String surname, int yearOfBirth, int height, int weight) {
